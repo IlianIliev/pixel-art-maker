@@ -3,35 +3,55 @@
     <head>
         <title>Pixel Art Maker!</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="pixeleditor/pixeleditor.css">
     </head>
     <body>
         <h1 class="centered">Pixel Art Maker</h1>
 
-        <div class="centered grid-controls">
-            <h2>Grid Size</h2>
-            <label for="width">Width</label>
-            <input type="number" id="width" name="width" value="24">
+        <div id="grid-container" class="centered">
+            <div class="centered grid-controls">
+                <h2>Grid Size</h2>
+                <label for="width">Width</label>
+                <input type="number" id="width" class="width-control" name="width" value="10">
 
-            <label for="height">Height</label>
-            <input type="number" id="height" name="height" value="24">
+                <label for="height">Height</label>
+                <input type="number" id="height" class="height-control" name="height" value="10">
 
-            <button name="grid_button">Resize grid</button>
+                <button class="resize-button">Resize grid</button>
+            </div>
+
+            <div class="centered grid-controls">
+                <label for="color">Color</label>
+                <input type="color" id="color" name="color" class="color-control" value="#000000">
+            </div>
+
+            <h2 class="centered">Design canvas</h2>
+            <div class="grid centered">
+                <!-- The grid will be drawn here -->
+            </div>
         </div>
 
-        <div class="centered grid-controls">
-            <label for="color">Color</label>
-            <input type="color" id="color" name="color"
-            value="#000000">
-        </div>
+        <hr>
 
-        <div class="centered">
-            <h2>Design canvas</h2>
-            <div id="grid" class="centered">
+        <h1 class="centered"> Pixel editor 2</h1>
+
+        <div id="grid-container2" class="centered">
+            <div class="centered grid-controls">
+                <span>Grid Size W/H</span>
+                <input type="number" class="width-control" name="width" value="5">
+                <input type="number" class="height-control" name="height" value="5">
+                <input type="color" name="color" class="color-control" value="#000000">
+                <button class="resize-button">Resize grid</button>
+            </div>
+
+            <h2 class="centered">Draw here</h2>
+            <div class="grid centered">
                 <!-- The grid will be drawn here -->
             </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="pixeleditor/pixeleditor.js"></script>
         <script src="design.js"></script>
     </body>
 </html>
