@@ -1,10 +1,22 @@
-#grid table {
-	border-collapse: collapse;
+.centered {
+    text-align: center;
 }
 
+
+.grid-controls {
+    margin: 10px 0;
+}
+
+
+#grid table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
 #grid table td {
-	width: 15px;
-	height: 15px;
-	border: 1px solid black;
-	margin: 0; padding: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    margin: 0; padding: 0;
 }
