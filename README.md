@@ -13,8 +13,18 @@ The HTML is easy customizable and the only requirement is that the editor contai
         <input type="number" class="width-control" name="width" value="5">
         <input type="number" class="height-control" name="height" value="5">
         <input type="color" name="color" class="color-control" value="#000000">
+        
+        <button class="undo">Undo</button>
+        <button class="redo">Redo</button>
+        
         <button class="resize-button">Resize grid</button>
         <div class="grid">
             <!-- The grid will be drawn here -->
         </div>
     </div>
+    
+    
+In addition you can add the optional Undo/Redo buttons in the container.
+    
+    <button class="undo">Undo</button>
+    <button class="redo">Redo</button>  
